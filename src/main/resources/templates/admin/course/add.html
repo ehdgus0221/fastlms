@@ -42,13 +42,13 @@
     </script>
 </head>
 <body>
-<h1>강좌 관리 - 강좌 등록</h1>
 <div th:replace="/fragments/layout.html :: fragment-admin-body-menu"></div>
+<h1>강좌 관리 - 강좌 등록</h1>
 
 
 <div class="detail">
 
-    <form id="submitForm" method="post">
+    <form id="submitForm" method="post" enctype="multipart/form-data">
 
         <table>
             <tbody>
@@ -124,6 +124,12 @@
                 </th>
                 <td>
                     <input th:value="${detail.saleEndDt}" type="text" name="saleEndDtText" placeholder="할인 종료일 입력"/>
+                </td>
+            </tr>
+            <tr>
+                <th>첨부 파일</th>
+                <td>
+                    <input type="file" name="file" />
                 </td>
             </tr>
 
