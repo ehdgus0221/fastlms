@@ -1,0 +1,6 @@
+Mariadb 10.11
+ip : 127.0.0.1
+port : 43306
+database : dongrycampus
+user : dongrycampus_user
+password : a1234
